@@ -36,9 +36,9 @@ track_table = Table(
     Column("UnitPrice", Float)
 )
 
+
 # making the connection
 with db.connect() as connection:
-
     # Query 1 - select all records from the "Artist" table
     # select_query = artist_table.select()
 
@@ -51,7 +51,7 @@ with db.connect() as connection:
     # Query 4 - select only by 'ArtistId' #51 from the "Artist" table
     # select_query = artist_table.select().where(artist_table.c.ArtistId == 51)
 
-    # Query 5 - select only the albums with 'ArtistId' #51 on the "Album" table
+    # Query 5 - select only the albums with 'ArtistId' #51 from the "Album" table
     # select_query = album_table.select().where(album_table.c.ArtistId == 51)
 
     # Query 6 - select all tracks where the composer is 'Queen' from the "Track" table
